@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search_option"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search_option_item"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/trash_option"
+        android:icon="@drawable/ic_trash"
+        android:title="@string/trash_option_item"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/setting_option"
+        android:icon="@drawable/ic_setting"
+        android:title="@string/setting_option_item"
+        app:showAsAction="always" />
+</menu>

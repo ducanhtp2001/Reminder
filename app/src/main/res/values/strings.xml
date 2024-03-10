@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">WorkReminder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_addfragment">Hello blank add fragment</string>
+    <string name="hello_blank_updatefragment">Hello blank update fragment</string>
+    <string name="hello_blank_homefragment">Hello blank home fragment</string>
+    <string name="hello_blank_settingfragment">Hello setting blank fragment</string>
+    <string name="input_user">Input your user name</string>
+    <string name="input_password">Input your password</string>
+    <string name="btn_login">Login</string>
+    <string name="register_new_account">Register new account</string>
+    <string name="passwork_require">The password must have 6 - 10 characters, must contain both letters and digits, and must begin with a upcase letter</string>
+    <string name="btn_register">Register</string>
+    <string name="re_enter_password">Re-enter password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="search_option_item">Search</string>
+    <string name="setting_option_item">Setting</string>
+    <string name="home_option">Home</string>
+    <string name="fab_add_new_work">add new work</string>
+    <string name="home_option_item">Home</string>
+    <string name="hint_txt">title</string>
+    <string name="hint_target_time_work">target time</string>
+    <string name="hint_target_date_work">target date</string>
+    <string name="hint_update_time">update time</string>
+    <string name="txt_remind_me">Remind me</string>
+    <string name="hint_search">Search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_input_title">Input title</string>
+    <string name="hint_input_description">Input your work</string>
+    <string name="txt_select_date_for_the_task">Select date for the task</string>
+    <string name="txt_select_time_for_the_task">Select time for the task</string>
+    <string name="fab_save">Click to next and save</string>
+    <string name="txt_click_to_back_pre_part">Click to back pre part</string>
+    <string name="txt_you_have_task">You have task:</string>
+    <string name="trash_option_item">Trash</string>
+</resources>

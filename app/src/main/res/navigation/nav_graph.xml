@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.workreminder.activities.reminder.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_update"
+            app:destination="@id/updateFragment" />
+        <action
+            android:id="@+id/action_home_to_add"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_home_to_setting"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_home_to_trash"
+            app:destination="@id/trashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.workreminder.activities.reminder.add.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_add_to_home"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.workreminder.activities.reminder.update.UpdateFragment"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_update_to_home"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.workreminder.activities.reminder.setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_setting_to_home"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trashFragment"
+        android:name="com.example.workreminder.activities.reminder.trash.TrashFragment"
+        android:label="fragment_trash"
+        tools:layout="@layout/fragment_trash" >
+        <action
+            android:id="@+id/action_trash_to_home"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

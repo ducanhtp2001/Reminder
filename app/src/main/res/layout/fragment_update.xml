@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.reminder.update.UpdateFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_description_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/input_to_update_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#7E99AE"
+            android:hint="@string/hint_input_title"/>
+
+        <EditText
+            android:background="#EDE27D"
+            android:id="@+id/input_to_update_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|start"
+            android:hint="@string/hint_input_description"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_date_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:layout_marginVertical="10dp"
+            android:text="@string/txt_select_date_for_the_task"/>
+
+        <DatePicker
+            android:id="@+id/date_picker_to_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_time_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:layout_marginVertical="10dp"
+            android:text="@string/txt_select_time_for_the_task"/>
+
+        <TimePicker
+            android:id="@+id/time_picker_to_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_next_part_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_next_part"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:contentDescription="@string/fab_save" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_pre_part_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_next_part"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="24dp"
+        android:rotationY="180"
+        android:visibility="gone"
+        android:contentDescription="@string/txt_click_to_back_pre_part" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+
+</FrameLayout>

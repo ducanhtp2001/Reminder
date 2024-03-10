@@ -95,6 +95,8 @@
             android:layout_gravity="center"
             android:textSize="18sp"
             android:padding="10dp"
+            android:clickable="false"
+            android:focusable="false"
             android:text="@string/txt_remind_me"/>
 
     </LinearLayout>
